@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhkugxe0w2gv6"]
+
+[ext_resource type="Script" path="res://scripts/root.gd" id="1_67oaq"]
+
+[node name="Root" type="Node2D"]
+script = ExtResource("1_67oaq")
+
+[node name="Nodes" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="UI"]
+offset_left = 5.00001
+offset_top = 4.00002
+offset_right = 78.0
+offset_bottom = 35.0
+scale = Vector2(2.39975, 2.87192)
+disabled = true
+text = "Dijkstra!"
+icon_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="UI"]
+visible = false
+offset_right = 67.0625
+offset_bottom = 31.0
+alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 183.0
+offset_top = 2.0
+offset_right = 601.0
+offset_bottom = 25.0
+scale = Vector2(1.81168, 1.81168)
+text = "[Clique em dois vértices e ENTER para excluir a aresta]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
+[connection signal="text_submitted" from="UI/LineEdit" to="." method="_on_line_edit_text_submitted"]

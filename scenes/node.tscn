@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://btxggsnqe205u"]
+
+[ext_resource type="Script" path="res://scripts/node.gd" id="1_uil21"]
+[ext_resource type="Texture2D" uid="uid://c0onpxuqf7if2" path="res://assets/white_circle.png" id="1_ypb0r"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_uil21")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ypb0r")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -34.0
+offset_top = -19.0
+offset_right = 6.0
+offset_bottom = 4.0
+scale = Vector2(1.70623, 1.70623)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
