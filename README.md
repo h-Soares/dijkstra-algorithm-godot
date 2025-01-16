@@ -1,5 +1,5 @@
 # 💻 Algoritmo de Dijkstra em Godot 
-O algoritmo de Dijkstra é um algoritmo que determina o menor caminho possível de um vértice para todos os outros em um grafo. Nesta implementação, foi considerado o menor caminho de um vértice até outro. 
+O algoritmo de Dijkstra é um algoritmo que determina o menor caminho possível de um vértice para todos os outros em um grafo. Nesta implementação, foi considerado o menor caminho de um vértice até outro em um grafo não orientado.
 
 # 🔎 Demonstração 
 https://github.com/user-attachments/assets/bf5a4e17-b1e1-4801-9bd9-8431831757c9
