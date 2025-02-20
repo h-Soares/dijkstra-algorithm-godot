@@ -86,7 +86,7 @@ func open_edge_weight_dialog():
 	$UI/LineEdit.grab_focus()
 
 func _on_line_edit_text_submitted(weight: String) -> void:
-	if !weight.is_empty() and !weight.is_valid_float():
+	if !weight.is_empty() and (!weight.is_valid_float() or float(weight) < 0):
 		$UI/LineEdit.text = ""
 		return	
 	var node1 = selected_nodes[0]
